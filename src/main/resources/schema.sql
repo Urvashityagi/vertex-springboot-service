@@ -1,0 +1,9 @@
+CREATE TABLE APP (
+    ID BIGINT PRIMARY KEY,
+    NAME VARCHAR(255),
+    INSTALLED BOOLEAN,
+    STATE VARCHAR(50), -- Store state like 'SCHEDULED', 'PICKEDUP', etc.
+    VERSION VARCHAR(50), -- Store state like 'SCHEDULED', 'PICKEDUP', etc.
+    LATEST_VERSION VARCHAR(10),
+    LAST_STATE_UPDATE TIMESTAMP -- Store timestamp of last state update
+);
